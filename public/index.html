@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mail Dev</title>
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="vendor/bootstrap-material-design/dist/css/bootstrap-material-design.min.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="vendor/bootstrap-material-design/dist/css/ripples.min.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="asset/style.css" media="screen" charset="utf-8">
+  </head>
+  <body>
+
+    <div class="header-panel shadow-z-2">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-3">
+          <h1>Mail Dev</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid main">
+    <div class="row">
+      <nav class="col-xs-3 menu">
+        <ul id="list-mail">
+          <li class="withripple" style="text-align:center">No mail yet</li>
+        </ul>
+      </nav>
+      <div class="pages col-xs-9">
+        <div class="row">
+          <div class="col-xs-11">
+            <div class="well page mail active" id="mail">
+              <header class="mail-header">
+                <table class="table">
+                  <tr>
+                    <th>To:</th>
+                    <td data-bind="to"></td>
+                    <th>From:</th>
+                    <td data-bind="from"></td>
+                  </tr>
+                  <tr>
+                    <th>Subject</th>
+                    <td data-bind="subject"></td>
+                    <th>Date:</th>
+                    <td data-bind="date"></td>
+                  </tr>
+                </table>
+              </header>
+              <main class="body">
+                <iframe id="mail-body" frameborder="0"></iframe>
+              </main>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap-material-design/dist/js/material.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap-material-design/dist/js/ripples.min.js"></script>
+    <script type="text/javascript" src="asset/application.js"></script>
+
+    <script type="text/javascript">
+      $.material.init();
+    </script>
+  </body>
+</html>

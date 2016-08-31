@@ -1,0 +1,128 @@
+
+.header-panel {
+    background-color:rgb(145, 58, 58) ;
+    height: 144px;
+    position: relative;
+    z-index: 3;
+}
+
+.header-panel div {
+    position: relative;
+    height: 100%;
+}
+
+.header-panel h1 {
+    color: #FFF;
+    position: absolute;
+    bottom: 10px;
+    padding-left: 35px;
+}
+
+.menu {
+    overflow: auto;
+    padding: 0;
+    height: 800px;
+}
+
+.menu, .menu * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 7px 0;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 20px 0 20px 50px;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.menu ul li.active {
+    background-color: #dedede;
+    position: relative;
+}
+
+.menu ul li a {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+
+.pages {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    padding: 0;
+    overflow: hidden;
+}
+
+.pages > div {
+    padding: 0 5px;
+    padding-top: 64px;
+}
+
+.pages .mail-header {
+    color: rgb(82, 101, 162);
+}
+
+.page {
+    transform: translateY(1080px);
+    transition: transform 0 linear;
+    display: none;
+    opacity: 0;
+    font-size: 16px;
+    margin-left: 1em;
+}
+
+.page.active {
+    transform: translateY(0px);
+    transition: all 0.3s ease-out;
+    display: block;
+    opacity: 1;
+}
+
+header.mail-header th{
+    width: 80px;
+}
+
+.mail.well{
+  padding: 0 !important;
+}
+.mail .mail-header{
+  padding: 19px;
+  background-color: #eee !important;
+}
+.mail .body{
+  margin: 19px
+}
+.mail .body iframe{
+  width: 100%;
+  min-height: 400px;
+}
+
+.mail-item .top{
+    display: flex;
+}
+.mail-item .top span{
+    flex: 1;
+    padding-right:  10px;
+    text-align: right;
+    font-size: small;
+}
+
+.mail-item[data-read=false]{
+    font-weight: bold;
+}
+.mail-item[data-read=false]:before{
+    position: absolute;
+    margin-left: -20px;
+    content: '*';
+    color: #d7392c;
+    font-size: 18pt;
+}

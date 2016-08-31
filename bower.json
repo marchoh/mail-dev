@@ -1,0 +1,17 @@
+{
+  "name": "maildev",
+  "authors": [
+    "Marc Heuker of Hoek <me@marchoh.com>"
+  ],
+  "description": "Is a dummy SMTP server that will display all its received mail through its web interface.",
+  "main": "",
+  "keywords": [
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "bootstrap-material-design": "^0.5.10",
+    "font-awesome": "fontawesome#^4.6.3"
+  }
+}
