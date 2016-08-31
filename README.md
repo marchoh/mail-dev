@@ -17,7 +17,7 @@ Features & Planned features
  
 How to use Mail Dev
 -------------------
-To use this software, grep a copy from the [release](https://github.com/marchoh/maildev/releases) page. Extract the
+To use this software, grep a copy from the [release](https://github.com/marchoh/mail-dev/releases) page. Extract the
 archive and run the `maildev` binary  (*make sure the public directory is in the current working directory*)
 and you are good to go. The web interface will be served from port `8025` and the SMTP server will listen to
 port `2525`.
